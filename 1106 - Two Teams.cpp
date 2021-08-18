@@ -38,15 +38,11 @@ int main(void) {
       DFS(i);
     }
   }
-  vector<int> grp;
+  cout << taken.count() << '\n';
   for (int i = 1; i <= n; ++i) {
     if (taken[i]) {
-      grp.push_back(i);
+      cout << i << ' ';
     }
-  }
-  cout << (int)grp.size() << '\n';
-  for (auto &i : grp) {
-    cout << i << ' ';
   }
   return 0;
 }
