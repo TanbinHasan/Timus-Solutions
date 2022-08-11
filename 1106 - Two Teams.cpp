@@ -34,9 +34,7 @@ int main(void) {
     }
   }
   for (int i = 1; i <= n; ++i) {
-    if (!vis[i]) {
-      DFS(i);
-    }
+    if (!vis[i]) DFS(i);
   }
   cout << taken.count() << '\n';
   for (int i = 1; i <= n; ++i) {
